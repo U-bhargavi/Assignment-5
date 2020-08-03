@@ -1,0 +1,130 @@
+#DOM Programming Interface
+
+  The HTML DOM can be accessed with JavaScript.
+  JavaScript can access all the elements in a webpage making use of Document Object Model (DOM).
+  Using DOM, JavaScript can perform multiple tasks. 
+  In the DOM, all HTML elements are defined as objects.
+  The programming interface is the properties and methods of each object.
+  A property is a value that you can get or set. 
+
+#Basic Web Page
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome To The World </h1>
+
+</body>
+</html>
+
+#By Using HTML Docu TO Assign The Events
+
+Example:
+<script>
+document.getElementById("BHARGAVI").onclick = displayYear;
+</script>
+
+#adding event handler to the objects
+
+window.addEventListener("resize", function()
+{
+  document.getElementById("demo").innerHTML = sometext;
+};
+
+#Finding HTML Element by Id
+var myElement = document.getElementById("intro");
+
+#Changing HTML Content
+
+example:
+<html>
+<body>
+
+<p id="p1">Welcome To The World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
+
+</body>
+</html>
+
+#Change the Value of an Attribute
+
+example:
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<img id="myImage" src="Bhargavi.gif">
+
+<script>
+document.getElementById("myImage").src = "photo.jpg";
+</script>
+
+</body>
+</html>
+
+#array
+
+var fruits = ["Ball", "Bat", "Cat", "Hat"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+output:Ball + Bat + Cat + Hat
+
+#forloop
+
+<!DOCTYPE HTML>
+<html>
+<p id="code"></p>
+<body>
+<script>  
+#forloop
+for (i=0; i<=4; i++)  
+{  
+document.getElementById("code").innerHTML=(i + " ")  
+}  
+</script> 
+</body> 
+</html>
+
+output:0 1 2 3 4
+
+#whileloop
+
+<!DOCTYPE html>
+<html>
+<p id="code"></p>
+<body>
+<script>  
+var i=1;  
+while (i<=5)  
+{  
+document.getElementById("DATA").innerHTML=(i + " ");  
+i++;  
+}  
+</script>  
+</body>
+</html>
+
+output: 1 2 3 4 5
+
+#dowhile
+
+<!DOCTYPE html>
+<html>
+<p id="code"></p>
+<body>
+<script>  
+var i=10;  
+do{  
+document.getElementById("DATA").innerHTML=(i + " ");  
+i++;  
+}while (i<=15);  
+</script>  
+</body>
+</html>
+ output: 10 11 12 13 14 15
+
+ 
